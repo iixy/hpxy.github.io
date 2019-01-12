@@ -1,0 +1,46 @@
+/* main-color #2F4F4F */
+/* devp-color #3F5F5F */
+
+/*全局设置*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased; /*抗锯齿*/
+  }
+p {
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 3px;
+  }
+p.handwrite {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #808080;
+  font-style:italic;
+  }
+
+hr {
+  color: #2F4F4F;
+  }
+ul.navigationBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2F4F4F;
+  height: 30px;
+  }
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  width: 40px;
+  font-size: 80%;
+  }
+
+/*鼠标移动到选项上修改背景颜色 */
+li a:hover {
+  background-color: #3F5F5F;
+  }
