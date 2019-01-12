@@ -7,12 +7,12 @@ body {
   -webkit-font-smoothing: antialiased; /*抗锯齿*/
   }
 h2 {
-  padding-left: 5px;
+  padding-left: 10px;
   }
 p {
   font-size: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  padding-left: 5px;
+  padding-left: 10px;
   color: 	#5B5B5B;
   }
 p.handwrite {
@@ -26,6 +26,10 @@ p.label {
   }
   
 hr {
+  height:1px;
+  width:98.6%;
+  border:none;
+  border-top:1px dashed;
   color: #2F4F4F;
   }
 ul.navigationBar {
