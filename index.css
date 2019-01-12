@@ -6,17 +6,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased; /*抗锯齿*/
   }
+h2 {
+  padding-left: 5px;
+  }
 p {
   font-size: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  padding-left: 3px;
+  padding-left: 5px;
+  color: 	#5B5B5B;
   }
 p.handwrite {
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: #808080;
   font-style:italic;
   }
-
+p.label {
+  font-size: 75%;
+  color: #8B8B8B;
+  }
+  
 hr {
   color: #2F4F4F;
   }
@@ -26,7 +34,7 @@ ul.navigationBar {
   padding: 0;
   overflow: hidden;
   background-color: #2F4F4F;
-  height: 30px;
+  height: 50px;
   }
 
 li a {
@@ -34,7 +42,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 5px 16px;
+  padding: 15px 16px;
   text-decoration: none;
   width: 40px;
   font-size: 80%;
