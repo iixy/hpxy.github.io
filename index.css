@@ -32,6 +32,9 @@ hr {
   border-top:1px dashed;
   color: #2F4F4F;
   }
+iframe {
+  background-color:#2F4F4F
+  }
 ul.navigationBar {
   list-style-type: none;
   margin: 0;
