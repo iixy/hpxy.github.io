@@ -21,14 +21,14 @@ p.handwrite {
   font-style:italic;
   }
 p.label {
-  font-size: 3px;
+  font-size: 7px;
   color: #8B8B8B;
   }
 p.sendmail {
-  
+  color: #4F9D9D
   }
 p.recvmail {
-  
+  color: #FF79BC
   }
 hr {
   height:1px;
