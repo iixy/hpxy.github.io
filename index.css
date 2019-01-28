@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: noteFont;
-  src: url('./font/noteFont.ttf'); 
+  src: url('./font/sendFont.ttf'); 
   }
     
 /*全局设置*/
@@ -41,11 +41,16 @@ p.label {
   color: #8B8B8B;
   }
 p.sendmail {
+  font-family: noteFont;
   color: #4F9D9D
   }
 p.recvmail {
   font-family: loveFont;
   color: #FF79BC
+  }
+p.greeting {
+  text-align: center;
+  text-shadow:0px 0px 10px #666666;
   }
 hr {
   height:1px;
