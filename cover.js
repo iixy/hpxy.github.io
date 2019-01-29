@@ -19,7 +19,7 @@ saying = ['Have you ever remember,<br />the day that we passed together.',
 '不要踏着露水，因为有人夜哭',
 '你一笑倾了四方<br />恍若初识地张扬',
 '亡命之徒<br />叫嚣人间无路',
-'“你是明月清晖<br />是晨光熹微<br />是心上人模样所绘。”',
+'你是明月清晖<br />是晨光熹微<br />是心上人模样所绘',
 '“已是人海孤鸿，<br />你似清晨朝暮。”',
 '“世人都说你思慕难及不可遇<br />我一转身隔着人海就看到了你<br />你眼中不起波澜难分悲喜<br />距离间没有夹杂曾经.”',
 '自那日起<br />再未见你<br />时至今日<br />仍会想你',
@@ -32,7 +32,7 @@ saying = ['Have you ever remember,<br />the day that we passed together.',
 ]
 ran = random(0,saying.length)
 console.log(ran)
-greeting.innerHTML = saying[ran]
+greeting.innerHTML = saying[6]
 
 // 界面只显示一次
 var ref = document.referrer;
