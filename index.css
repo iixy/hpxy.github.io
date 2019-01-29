@@ -19,8 +19,6 @@ body {
   /*网格背景*/
   background-image: linear-gradient(90deg, rgba(150, 150, 150, 0.15) 10%, rgba(0, 0, 0, 0) 10%),linear-gradient(rgba(150, 150, 150, 0.15) 10%, rgba(0, 0, 0, 0) 10%);
   background-size: 10px 10px;
-  
-  overflow: hidden;
   }
   
 h2 {

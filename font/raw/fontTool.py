@@ -10,7 +10,7 @@ for root,path,file in os.walk(DIR):
     
     os.chdir(root)
     for j in file:
-        if j.endswith(".html"): 
+        if j.endswith(".html") or j.endswith(".js"): 
             print(j)
             with open(j,"r",encoding="utf-8") as fp:
                 for k in fp.readlines():
