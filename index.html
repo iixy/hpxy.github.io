@@ -9,8 +9,11 @@
 </head>
 
 <body id="body" style="overflow: hidden">
-  <div id="cover" onclick="this.hidden = true; //隐藏封面
-                document.getElementById('body').style.overflow = 'visible'; //可以滚动"> 
+  <div id="cover" 
+       onclick="this.hidden = true; //隐藏封面
+                document.getElementById('body').style.overflow = 'visible'; //可以滚动"
+       ontouchstart="this.hidden = true; //隐藏封面(手机端)
+                document.getElementById('body').style.overflow = 'visible'; //可以滚动""> 
     <!-- 封面 -->
     <img id="coverimg" src="./jpg/cover.jpg" alt="cover.jpg" style="position:absolute;height=100%;width=100%;left=0px;top=0px;background-color=black;z-index:1" />
     <p id="greeting" class="greeting"> </p>
