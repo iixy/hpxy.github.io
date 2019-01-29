@@ -2,12 +2,13 @@ var cover = document.getElementById('cover')
 var coverImg = document.getElementById('coverimg')
 var greeting = document.getElementById('greeting')
 
-coverImg.height = window.innerHeight 
-coverImg.width = window.innerWidth 
+coverImg.height = window.innerHeight - 10
+coverImg.width = window.innerWidth - 10
 
 console.log(window.innerHeight)
 console.log(window.innerWidth)
 
+// 一些话
 function random(m, n){
     return Math.floor(Math.random()*10**17)%(n-m)+m;
 } 
