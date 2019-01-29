@@ -32,7 +32,7 @@ saying = ['Have you ever remember,<br />the day that we passed together.',
 ]
 ran = random(0,saying.length)
 console.log(ran)
-greeting.innerHTML = saying[6]
+greeting.innerHTML = saying[ran]
 
 // 界面只显示一次
 var ref = document.referrer;
