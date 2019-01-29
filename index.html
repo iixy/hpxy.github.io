@@ -8,19 +8,27 @@
   <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
-<body id="cover">
+<body>
+  <div id="cover"> 
+    <!-- 封面 -->
+    <img onclick="this.hidden=true" src="./jpg/cover.jpg" alt="cover.jpg" height=100% width=100% style="position:absolute;height=100%;width=100%;left=0px;top=0px;background-color=black;z-index:1" />
+    <p class="greeting" id="greeting">你好，陌路人</p>
+  </div>
+  
+  <!-- 导航栏 -->
   <iframe id="navigationbar" src="./header.html" width="100%" height="60px" frameborder="0" scrolling="no" name="headFrame"></iframe>
-  <p class="greeting" id="greeting">你好，陌路人</p>
   
   <div id="allarticle">
+  
   <!-- 
   <div class="article">
     <h2>Title</h2>
-    <p class="label"><i class="fa fa-paper-plane-o"> yyyy-mm-dd</i></p>
+    <p class="label"><i class="fa fa-paper-plane-o"></i> yyyy-mm-dd</p>
     <p>Message</p>
     <hr />
   </div>
   -->
+  
   
   <div class="article">
     <h2>墓地</h2>
@@ -33,21 +41,20 @@
     <hr />
   </div>
   
-  
   <div class="article">
     <h2>Shine.</h2>
-    <p class="label"><i class="fa fa-paper-plane-o"> 2019-1-28</i></p>
+    <p class="label"><i class="fa fa-paper-plane-o"></i> 2019-1-28</p>
     <p>她，终于，在我的记忆中渐渐模糊。作为理科生能我不知为何却坚信她会回来，就好像，只是，她去很远的地方旅行，终究会在未来的某一天回来。<br />
     也许，最终等来的是嘲笑，谁知道呢？生活还算是充实，有的人走过，有的人留下，重复着以往重复的生活。<br />
     The best feeling is that when I look at you, you are staring.
     </p>
     <hr />
+    
+    
   </div>
   
   <footer>
   </footer>
+  
 </body>
-
-<!-- <script type="text/javascript" src="index.js"></script> -->
-
 </html>
