@@ -54,13 +54,14 @@ p.recvmail {
   }
 p.greeting {
   color: #ECFFFF;
-  position:absolute;
-  z-index: 2;
+  position: absolute;
+  width: 100%;
   text-align: center;
-  top: 50%;
-  left:50%;
+  height: 100%;
+  vertical-align:middle;
+  z-index: 2;
   text-shadow:0px 0px 8px #ECFFFF;
-  font-size: 20px;
+  font-size: 12px;
   }
 hr {
   height:1px;
