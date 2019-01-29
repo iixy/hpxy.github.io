@@ -1,1 +1,4 @@
+cd C:\Users\m\Documents\GitHub\hpxy.github.io\font\raw
+python fontTool.py
+
 https://www.disidu.com/download/Fontmin-v0.2.0-win64.zip

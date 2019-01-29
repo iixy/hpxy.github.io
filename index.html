@@ -8,17 +8,20 @@
   <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
-<body>
-  <div id="cover"> 
+<body id="body">
+  <div id="cover" onclick="this.hidden = true; //隐藏封面
+                document.getElementById('body').style.overflow = 'visible'; //可以滚动"> 
     <!-- 封面 -->
-    <img onclick="this.hidden=true" src="./jpg/cover.jpg" alt="cover.jpg" height=100% width=100% style="position:absolute;height=100%;width=100%;left=0px;top=0px;background-color=black;z-index:1" />
-    <p class="greeting" id="greeting">你好，陌路人</p>
+    <img src="./jpg/cover.jpg" alt="cover.jpg" height=100% width=100% style="position:absolute;height=100%;width=100%;left=0px;top=0px;background-color=black;z-index:1" />
+    <p class="greeting">你好，陌路人</p>
   </div>
+  <script type="text/javascript" src="cover.js">
+  </script>
   
   <!-- 导航栏 -->
-  <iframe id="navigationbar" src="./header.html" width="100%" height="60px" frameborder="0" scrolling="no" name="headFrame"></iframe>
+  <iframe src="./header.html" width="100%" height="60px" frameborder="0" scrolling="no" name="headFrame"></iframe>
   
-  <div id="allarticle">
+  <div>
   
   <!-- 
   <div class="article">
@@ -50,11 +53,29 @@
     </p>
     <hr />
     
-    
+  
+  <div class="article">
+    <h2>Future.</h2>
+    <p class="label"><i class="fa fa-paper-plane-o"></i> 2019-1-29</p>
+    <p>沉迷于此，不知算是幸运还是不幸；就像朝花夕拾般，她走了，才恍然，挣扎，试图通过往日碎片对她回忆，从而缅怀过去的感情。
+    也许只有失去了，方知重要吧。<br />
+    但愿我会在将来的某天，衣冠楚楚地站在她面前，如相识的旧友般，一见如故，眉目成书<br />
+    May we will shine in the years that we won't see each other.
+    </p>
+    <hr />
+  </div>
+  
   </div>
   
   <footer>
   </footer>
   
+  <!--
+  <script type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+  <script type="text/javascript"> 
+　　 localStorage.setItem("ip",returnCitySN.cip); //存入 参数： 1.调用的值 2.所要存入的数据 
+　　 console.log(localStorage.getItem("ip"))
+  </script>
+  -->
 </body>
 </html>

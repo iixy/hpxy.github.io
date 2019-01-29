@@ -2,7 +2,6 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="index.css" />
-  <bgsound src="./sound/bgsound.m4a" autostart=true loop="-1" /> 
 </head>
 <body>
   <ul class="navigationBar">
@@ -11,5 +10,11 @@
     <li><a href="./viewer/fiction.html" target="_parent">邮件</a></li>
     <li><a href="./viewer/sentence.html" target="_parent">句子</a></li>
   </ul>
+  
+  <!-- 背景音乐 -->
+  <audio controls="controls" autoplay="autoplay" controls="controls" hidden="hidden">
+		<source src="./sound/bgsound.m4a" type="audio/m4a">
+		<embed height="50px" width="100px" src="./sound/bgsound.m4a">
+	</audio>
 </body>
 </html>
