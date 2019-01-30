@@ -3,15 +3,28 @@
 <head>
   <link rel="stylesheet" type="text/css" href="index.css" />
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"> 
+  <style>
+  i.fa {
+  font-size: 200%;
+  }
+  </style>
 </head>
 <body>
   <ul class="navigationBar">
-    <li><a href="./index.html" target="_parent">随笔</a></li>
-    <li><a href="./viewer/code.html" target="_parent">经历</a></li>
-    <li><a href="./viewer/fiction.html" target="_parent">邮件</a></li>
-    <li><a href="./viewer/sentence.html" target="_parent">句子</a></li>
+    <li><a id="essay"  href="./index.html" target="_parent">
+      <i class="fa fa-gg"></i><br />随笔</a></li>
+      
+    <li><a id="experience" href="./viewer/code.html" target="_parent">
+      <i class="fa fa-star-o"></i><br />经历</a></li>
+    
+    <li><a id="mail" href="./viewer/fiction.html" target="_parent">
+    <i class="fa fa-envelope-o"></i><br />邮件</a></li>
+    
+    <li><a id="sentence" href="./viewer/sentence.html" target="_parent">
+      <i class="fa fa-code"></i><br />句子</a></li>
   </ul>
-  
+  <script type="text/javascript" src="setHeader.js"></script>
   <!-- 背景音乐 -->
   <audio controls="controls" autoplay="autoplay" controls="controls" hidden="hidden">
 		<source src="./sound/bgsound.mp3" type="audio/mp3">

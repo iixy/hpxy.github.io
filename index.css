@@ -69,14 +69,15 @@ hr {
   color: #2F4F4F;
   }
 iframe {
-  background-color:#2F4F4F
+  background-color:white;
+  
+  position: fixed;
+  bottom: 0px;
   }
 #coverimg {
   position:absolute;
-  height=100%;
   width=100%;
   left=0px;
-  top=0px;
   background-color=black;
   padding-left: 0px;
   padding-top: 0px;
@@ -88,22 +89,22 @@ ul.navigationBar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #2F4F4F;
+  background-color: white;
   height: 50px;
   }
 
 li a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 15px 16px;
   text-decoration: none;
   width: 40px;
-  font-size: 80%;
+  font-size: 60%;
   }
 
-/*鼠标移动到选项上修改背景颜色 */
+/*鼠标移动到选项上 */
 li a:hover {
-  background-color: #3F5F5F;
+  ;
   }
