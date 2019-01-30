@@ -71,6 +71,18 @@ hr {
 iframe {
   background-color:#2F4F4F
   }
+#coverimg {
+  position:absolute;
+  height=100%;
+  width=100%;
+  left=0px;
+  top=0px;
+  background-color=black;
+  padding-left: 0px;
+  padding-top: 0px;
+  z-index:1
+}
+  
 ul.navigationBar {
   list-style-type: none;
   margin: 0;
