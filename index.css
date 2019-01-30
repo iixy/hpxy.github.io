@@ -86,16 +86,16 @@ iframe {
   
 ul.navigationBar {
   // position:absolute;
+  bottom: 20px;
   list-style-type: none;
   margin: 0;
-  padding-bottom: 20px;
   overflow: hidden;
   background-color: white;
   height: 50px;
   }
 
 li a {
-  // position:absolute;
+  position:relative;
   float: left;
   display: block;
   color: black;
