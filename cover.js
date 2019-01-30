@@ -2,8 +2,8 @@ var cover = document.getElementById('cover')
 var coverImg = document.getElementById('coverimg')
 var greeting = document.getElementById('greeting')
 
-coverImg.height = window.innerHeight - 23
-coverImg.width = window.innerWidth - 23
+coverImg.height = window.innerHeight -10
+coverImg.width = window.innerWidth - 10
 
 console.log(window.innerHeight)
 console.log(window.innerWidth)
