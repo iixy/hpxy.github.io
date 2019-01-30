@@ -85,20 +85,23 @@ iframe {
 }
   
 ul.navigationBar {
+  // position:absolute;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
   overflow: hidden;
   background-color: white;
   height: 50px;
   }
 
 li a {
+  // position:absolute;
   float: left;
   display: block;
   color: black;
   text-align: center;
   padding: 15px 16px;
+  // padding-bottom: 25px;
   text-decoration: none;
   width: 40px;
   font-size: 60%;
