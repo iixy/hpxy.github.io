@@ -98,7 +98,7 @@ iframe {
   position: fixed;
   // left: -20px;
   text-align: center;
-  height: 70px;
+  // height: 100px;
   bottom: 10px;
   }
 #coverimg {
@@ -120,10 +120,11 @@ ul.navigationBar {
   overflow: hidden;
   background-color: white;
   padding-left: 5vw;
-  height: 70px;
+  height: 50px;
   }
 
 li a {
+  // background-color: #ABE;
   position:relative;
   float: left;
   display: block;
@@ -133,6 +134,7 @@ li a {
   // padding-bottom: 25px;
   text-decoration: none;
   width: 40px;
+  height: 50px;
   font-size: 60%;
   }
 
