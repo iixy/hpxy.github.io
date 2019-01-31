@@ -120,7 +120,7 @@ ul.navigationBar {
   overflow: hidden;
   background-color: white;
   padding-left: 5vw;
-  height: 50px;
+  height: 60px;
   }
 
 li a {
@@ -130,11 +130,12 @@ li a {
   display: block;
   color: black;
   text-align: center;
+  vertical-align:middle;
   padding: 0 5vw;
   // padding-bottom: 25px;
   text-decoration: none;
   width: 40px;
-  height: 50px;
+  height: 60px;
   font-size: 60%;
   }
 
