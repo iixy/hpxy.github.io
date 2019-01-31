@@ -18,8 +18,8 @@
   
 /*全局设置*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased; /*抗锯齿*/
+  // font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;  /*抗锯齿*/
   // width:100%;
   // height:100%;
   margin: 0;
@@ -41,6 +41,7 @@ i {
 p {
   // text-indent: 2px;
   font-size: 100%;
+  line-height: 150%;
   font-family: noteFont;
   padding: 0px 10px 10px 10px;
   color: 	#5B5B5B;
@@ -97,6 +98,7 @@ iframe {
   position: fixed;
   // left: -20px;
   text-align: center;
+  height: 70px;
   bottom: 10px;
   }
 #coverimg {
