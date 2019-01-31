@@ -70,9 +70,9 @@ hr {
   }
 iframe {
   background-color:white;
-  
   position: fixed;
-  bottom: 0px;
+  left: -20px;
+  bottom: 10px;
   }
 #coverimg {
   position:absolute;
@@ -86,7 +86,7 @@ iframe {
   
 ul.navigationBar {
   // position:absolute;
-  bottom: 20px;
+  // bottom: 20px;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -100,7 +100,7 @@ li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 15px 16px;
+  padding: 0px 16px 25px 16px;
   // padding-bottom: 25px;
   text-decoration: none;
   width: 40px;
