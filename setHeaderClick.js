@@ -7,6 +7,6 @@ function liwasclick(self) {
     other[i].style.color = 'black';
     
   }
-  self.style.backgroundColor='#BBB';
-  self.style.color = 'white';
+  // self.style.backgroundColor='#BBB';
+  // self.style.color = 'white';
 }
