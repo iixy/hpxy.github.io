@@ -30,25 +30,45 @@ body {
   background-size: 10px 10px;
   }
   
-h2 {
+h2, h3 {
   padding: 10px 10px 5px 10px;
   font-size: 100%;
   font-weight: bold;
   }
+h3 {
+  font-size: 150%;
+}
 i { 
   padding: 3px 2px;
 }
-p {
+p,input {
   // text-indent: 2px;
   font-size: 100%;
   line-height: 150%;
-  font-family: noteFont;
+  font-family: noteFont, SimHei, sans-serif;
   padding: 0px 10px 10px 10px;
   color: 	#5B5B5B;
   letter-spacing: 0.4px;
   /*强制换行*/
   word-break:break-all;
   }
+
+input, textarea{
+  font-family: SimHei,sans-serif;
+  padding: 0;
+  position: absolute;
+  left: 10px;
+  background-color: white;
+  // outline-width: 0;
+  border: 0;
+  outline: medium;
+  outline-color: #777;
+  
+}
+
+p.sentence {
+  font-family: SimHei,sans-serif;
+}
 p.handwrite {
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: #808080;
@@ -78,6 +98,25 @@ p.greeting {
   font-size: 16px;
   padding-top: 20px;
   }
+  
+.righttop {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    size: 220%;
+  }
+.rightbottle {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    // size: 200%;
+  }
+  
+.svg {
+  height: 25px;
+  width: 25px;
+  color: #888;
+}
 hr {
   padding: 0px 0px 0px 0px;
   height:1px;
