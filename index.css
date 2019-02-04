@@ -64,6 +64,8 @@ input, textarea{
   outline: medium;
   width: 90%;
   outline-color: #777;
+  word-break:break-all;
+  // 禁止改变大小
   resize: none;
 }
 input {
