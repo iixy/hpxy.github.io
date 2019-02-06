@@ -25,7 +25,8 @@ class Thread_watcher_sank(Thread):
         self.user_date_list = list()
         
     def _openFile(self):
-        self.fp = open('../code/trans.html','a')
+        # 用xml储存数据
+        self.fp = open('../code/trans.xml','a')
         self.STATE = OPENED
         
     def addData(self,user_name,user_passage,user_ip,user_date):
@@ -45,15 +46,12 @@ class Thread_watcher_sank(Thread):
         # 到一个指定位置追加
         for i in range(self.user_name_list.__len__())
             self.fp.write('''
-  <div class="article">
-    <h2>%s</h2>
-    <p class="label">
-      <i class="fa fa-pagelines"></i> %s &nbsp;
-      <i class="fa fa-map-marker"></i> %s
-    </p>
-    <p>%s</p>
-    <hr />
-  </div>
+<article>
+  <author>%s</author>
+  <date>%s</date>
+  <ip>%s</ip>
+  <passage>%s</passage>
+</article>
         ''' %(self.user_name_list[i],self.user_date_list[i],self.user_ip_list[i],self.user_passage_list[i]))
         self.fp.flush()
         
