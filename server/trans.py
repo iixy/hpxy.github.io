@@ -65,7 +65,7 @@ class Thread_watcher_sank(Thread):
         
     def _uploadFile(self):
         self.STATE = self.UPLOADED
-        os.system('bash gitoperate.sh')
+        os.system('bash gitoperate.sh < autoInput.h')
         self.STATE = self.OPENED
         
     def run(self):
