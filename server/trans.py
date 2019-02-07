@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 from bottle import *
 from threading import Thread
 import os,time
@@ -18,7 +20,7 @@ class Thread_watcher_sank(Thread):
     WATTINGTOUPLOAD = 0 # 0 | 1
     
     def __init__(self):
-        super.__init__()
+        super().__init__()
         self.user_name_list = list()
         self.user_passage_list = list()
         self.user_ip_list = list()
@@ -26,8 +28,9 @@ class Thread_watcher_sank(Thread):
         
     def _openFile(self):
         # 用xml储存数据
-        self.fp = open('../code/trans.xml','a')
-        self.STATE = OPENED
+        os.chdir(r'../viewer/')
+        self.fp = open('trans.xml','a')
+        self.STATE = self.OPENED
         
     def addData(self,user_name,user_passage,user_ip,user_date):
         self.user_name_list.append(user_name)
@@ -40,19 +43,18 @@ class Thread_watcher_sank(Thread):
         
     def _closeFile(self):
         self.fp.close()
-        self.STATE = UNOPENED
+        self.STATE = self.UNOPENED
         
     def _writeData(self):
         # 到一个指定位置追加
-        for i in range(self.user_name_list.__len__())
+        for i in range(self.user_name_list.__len__()):
             self.fp.write('''
 <article>
   <author>%s</author>
   <date>%s</date>
   <ip>%s</ip>
   <passage>%s</passage>
-</article>
-        ''' %(self.user_name_list[i],self.user_date_list[i],self.user_ip_list[i],self.user_passage_list[i]))
+</article>''' %(self.user_name_list[i],self.user_date_list[i],self.user_ip_list[i],self.user_passage_list[i]))
         self.fp.flush()
         
         self.ARREY = self.NONE;
@@ -62,9 +64,9 @@ class Thread_watcher_sank(Thread):
         self.user_date_list = list()
         
     def _uploadFile(self):
-        self.STATE = UPLOADED
-        os.system('./gitoperate.sh')
-        self.STATE = OPENED
+        self.STATE = self.UPLOADED
+        os.system('bash gitoperate.sh')
+        self.STATE = self.OPENED
         
     def run(self):
         i = 0
@@ -93,17 +95,16 @@ app = Bottle()
 
 @app.route('/trans',method='post')
 def getData():
-    user_name = request.forms.get('name').replace('<','&lt;'),replace('>','&lt;')
-    user_passage = request.forms.get('user_passage').replace('<','&lt;'),replace('>','&lt;')
+    user_name = request.forms.get('name')#.replace('<','&lt;'),replace('>','&lt;')
+    user_passage = request.forms.get('user_passage')#.replace('<','&lt;'),replace('>','&lt;')
     user_ip = request.environ.get('REMOTE_ADDR')
-    user_date = time.strftime("%Y-%m-%d %H:%M",time.time())
+    user_date = time.strftime("%Y-%m-%d %H:%M")
     watcher_sank.addData(user_name,user_passage,user_ip,user_date)
     
-    return '''
+    return r'''
     <p class="sentence">静待漂流瓶入海...</p>
     <script>
-    function relocation() { location = 'xxx'}
-    setTimeout(relocation,3000)
+    setTimeout(function() { window.location = 'https://hpxy.github.io/viewer/sentence.html',3000)
     </script>
     ''';
 
