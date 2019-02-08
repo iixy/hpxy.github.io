@@ -105,7 +105,7 @@ def getData():
     return r'''
     <p class="sentence">静待漂流瓶入海...</p>
     <script>
-    setTimeout(function() { window.location = 'https://hpxy.github.io/viewer/sentence.html',3000)
+    setTimeout(function() { window.location = 'https://hpxy.github.io/viewer/sentence.html' },2000)
     </script>
     ''';
 
